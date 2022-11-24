@@ -12,6 +12,7 @@ import { BooksearchComponent } from './booksearch/booksearch.component';
 import { EditbookComponent } from './editbook/editbook.component';
 import { IssuebookComponent } from './issuebook/issuebook.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -56,7 +57,8 @@ const myRoute:Routes=[
     BookdeleteComponent,
     BooksearchComponent,
     EditbookComponent,
-    IssuebookComponent
+    IssuebookComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
