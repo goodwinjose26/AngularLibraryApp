@@ -13,21 +13,22 @@ import { EditbookComponent } from './editbook/editbook.component';
 import { IssuebookComponent } from './issuebook/issuebook.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+
 const myRoute:Routes=[
   {
     path:"",
     component:LoginComponent
   },
   {
-    path:"/registration",
+    path:"registration",
     component:RegistrationComponent
   },
   {
-    path:"/delete",
+    path:"delete",
     component:BookdeleteComponent
   },
   {
-    path:"/search",
+    path:"search",
     component:BooksearchComponent
   },
   {
@@ -35,15 +36,15 @@ const myRoute:Routes=[
     component:BooksentryComponent
   },
   {
-    path:"/issue",
+    path:"issue",
     component:IssuebookComponent
   },
   {
-    path:"/edit",
+    path:"edit",
     component:EditbookComponent
   },
   {
-    path:"/view",
+    path:"view",
     component:ViewbookComponent
   }
 ]
