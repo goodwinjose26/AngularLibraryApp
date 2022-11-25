@@ -3,117 +3,22 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img height="200px" class="card-img-top" src="https://bestlifeonline.com/wp-content/uploads/sites/3/2020/10/Harry-Potter-and-the-Chamber-of-Secrets-book-cover.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Harry potter</h5>
-                          <p class="card-text">Price:500</p>
-                        </div>
-                      </div>
-
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img height="200px" class="card-img-top" src="https://book-assets.openroadmedia.com/9781497644984.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Alice in wonder land</h5>
-                          <p class="card-text">Price:900</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img height="200px" class="card-img-top" src="https://i0.wp.com/interestingliterature.com/wp-content/uploads/2017/01/secret-library-book-cover-2.jpg?ssl=1" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">The secret library</h5>
-                          <p class="card-text">Price:400</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img height="200px" class="card-img-top" src="https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Harper lee</h5>
-                          <p class="card-text">Price:800</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 " *ngFor="let i of book">
 
                     <div class="card" >
-                        <img height="200px" class="card-img-top" src="https://www.rd.com/wp-content/uploads/2019/11/diary-of-a-wimpy-kid-by-jeff-kinney-children-s-book-via-amazon-com-ecomm.jpg?fit=700,700" alt="Card image cap">
+                        <img height="200px" class="card-img-top" src="{{i.image}}" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Diary of a wimper kid</h5>
-                          <p class="card-text">Price:700</p>
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <p class="card-text">{{i.price}}</p>
                         </div>
                       </div>
 
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="200px" class="card-img-top" src="https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Lord of the rings</h5>
-                          <p class="card-text">Price:1000</p>
-                        </div>
-                      </div>
 
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="200px" class="card-img-top" src="https://www.oberlo.com/media/1603897583-image16-1.jpg?w=1824&fit=max" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Think and grow rich</h5>
-                          <p class="card-text">Price:900</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="200px" class="card-img-top" src="https://media1.popsugar-assets.com/files/thumbor/JWgHnBeDTd9SDUmjXKr4oYvqELs/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2021/05/19/856/n/1922283/2130104860a567e911deb2.99901336_/i/best-books-on-booktok.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">The house in the sea</h5>
-                          <p class="card-text">Price:600</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="200px" class="card-img-top" src="https://img.theculturetrip.com/wp-content/uploads/2017/08/9780330458535.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">The palace of illusion</h5>
-                          <p class="card-text">Price:1000</p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="200px" class="card-img-top" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F03%2F91xl8vzglyl-2000.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Stephan hawking</h5>
-                          <p class="card-text">Price:750</p>
-                        </div>
-                      </div>
-
-                </div>
+              
+              
+              
+             
             </div>
         </div>
     </div>
