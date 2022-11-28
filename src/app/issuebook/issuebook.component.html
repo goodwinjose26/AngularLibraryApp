@@ -5,22 +5,22 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Book title</label>
-                    <input type="text" class="form-control">
+                    <input name="titile" [(ngModel)]="titile" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date of issue</label>
-                    <input type="text" class="form-control">
+                    <input name="doi" [(ngModel)]="doi" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Membership no</label>
-                    <input type="text" class="form-control">
+                    <input name="mno" [(ngModel)]="mno" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-success">Submit</button>
+                    <button (click)="issueValues()" class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>

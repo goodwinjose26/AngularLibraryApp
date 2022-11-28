@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./editbook.component.css']
 })
 export class EditbookComponent {
+  title=""
 
+  editBook=()=>
+  {
+    let data:any={
+      "title":this.title
+    }
+    console.log(data)
+  }
 }
