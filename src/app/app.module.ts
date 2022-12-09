@@ -17,6 +17,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { UserregistrationComponent } from './userregistration/userregistration.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
+import { UserviewComponent } from './userview/userview.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -65,7 +67,9 @@ const myRoute:Routes=[
     IssuebookComponent,
     NavbarComponent,
     UserloginComponent,
-    UserregistrationComponent
+    UserregistrationComponent,
+    Navbar2Component,
+    UserviewComponent
   ],
   imports: [
     BrowserModule,

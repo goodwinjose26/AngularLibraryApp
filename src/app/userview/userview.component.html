@@ -1,0 +1,27 @@
+
+<app-navbar2></app-navbar2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">BOOK TITLE</th>
+        <th scope="col">DESCRIPTION NO</th>
+        <th scope="col">AUTHOR</th>
+        <th scope="col">PUBLISHER</th>
+        <th scope="col">PRICE</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td>{{i.booktitle}}</td>
+        <td>{{i.description}}</td>
+        <td>{{i.author}}</td>
+        <td>{{i.publisher}}</td>
+        <td>{{i.price}}</td>
+
+
+      </tr>
+    
+    </tbody>
+  </table>
