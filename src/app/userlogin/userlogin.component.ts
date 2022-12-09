@@ -1,0 +1,41 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiService } from '../api.service';
+
+@Component({
+  selector: 'app-userlogin',
+  templateUrl: './userlogin.component.html',
+  styleUrls: ['./userlogin.component.css']
+})
+export class UserloginComponent {
+
+
+  username=""
+  password=""
+  searchUser:any=[]
+  
+  constructor(private api:ApiService,private router:Router){}
+  loginValues=()=>
+  {
+    let data:any={"username":this.username,"password":this.password}
+    console.log(data)
+    this.api.addLogin(data).subscribe(
+      (response:any)=>
+      {
+        console.log(response)
+        if (response.length==0) {
+          alert("invalid email or password")
+          this.username=""
+          this.password=""
+        } else {
+          this.searchUser=response;
+          this.router.navigate(['/userview'])
+        }
+       
+       
+      }
+    )
+    
+  }
+  }
+  
