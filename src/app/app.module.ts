@@ -19,6 +19,7 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { UserregistrationComponent } from './userregistration/userregistration.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { UserviewComponent } from './userview/userview.component';
+import { UsersearchComponent } from './usersearch/usersearch.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -52,6 +53,14 @@ const myRoute:Routes=[
   {
     path:"userregistration",
     component:UserregistrationComponent
+  },
+  {
+    path:"userview",
+    component:UserviewComponent
+  },
+  {
+    path:"usersearch",
+    component:UsersearchComponent
   }
 ]
 @NgModule({
@@ -69,7 +78,8 @@ const myRoute:Routes=[
     UserloginComponent,
     UserregistrationComponent,
     Navbar2Component,
-    UserviewComponent
+    UserviewComponent,
+    UsersearchComponent
   ],
   imports: [
     BrowserModule,
