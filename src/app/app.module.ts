@@ -16,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { UserregistrationComponent } from './userregistration/userregistration.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -45,6 +46,10 @@ const myRoute:Routes=[
   {
     path:"userlogin",
     component:UserloginComponent
+  },
+  {
+    path:"userregistration",
+    component:UserregistrationComponent
   }
 ]
 @NgModule({
@@ -59,7 +64,8 @@ const myRoute:Routes=[
     EditbookComponent,
     IssuebookComponent,
     NavbarComponent,
-    UserloginComponent
+    UserloginComponent,
+    UserregistrationComponent
   ],
   imports: [
     BrowserModule,
